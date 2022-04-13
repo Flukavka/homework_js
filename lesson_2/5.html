@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо скопировать и вставить в данный скрипт все функции из 4 задания.
+Необходимо реализовать функцию:
+mathOperation(arg1, arg2, operation);
+Параметры:
+arg1 - первое число.
+arg2 - второе число.
+operation - строка, которая содержит один символ из: "+", "-", "*", "/".
+Функция mathOperation должна вернуть результат операции, который был передан в
+параметр operation для двух первых аргументов (arg1 и arg2).
+Функция mathOperation должна использовать для вычисления функции из 4 задания.
+
+Примеры вызова функции:
+console.log(mathOperation(5, 3, "+")); // 8
+console.log(mathOperation(5, 3, ":)")); // NaN
+
+Функции mathOperation всегда передаются корректные числа, проверки на NaN,
+Infinity делать не нужно, однако, в случае если был передан некорректный
+аргумент в параметр operation, необходимо вернуть NaN.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+
+  <!-- Комментарии к функциям и функции прописала в файле js, т.к. в html файле
+они не работают -->
+  <!--   <script src="5.js"></script> -->
+
+  <script>
+    "use strict";
+
+
+    /**
+    * функция суммирует значения
+    * @param {number} num1 числовое значение №1
+    * @param {number} num2 числовое значение №2
+    * @returns возвращает сумму значений
+    */
+    function sum(num1, num2) {
+      return num1 + num2;
+    }
+
+    /**
+     * функция определяет разность значений
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает разность значений
+     */
+    function diff(num1, num2) {
+      return num1 - num2;
+    }
+
+    /**
+     * функция определяет произведение значений
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает произведение значений
+     */
+    function multiplication(num1, num2) {
+      return num1 * num2;
+    }
+
+    /**
+     * функция определяет частное
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает частное
+     */
+    function division(num1, num2) {
+      return num1 / num2;
+    }
+
+    /**
+    * функция определяет сумму, разность, произведение и частное введенных
+    * пользователем значений
+    * @param {number} num1
+    * @param {number} num2
+    * @param {operator} operation математическая операция
+    * @returns возвращает результат математической операции
+    */
+    function mathOperation(num1, num2, operation) {
+      switch (operation) {
+        case "+":
+          return sum(num1, num2);
+        case "-":
+          return diff(num1, num2);
+        case "*":
+          return multiplication(num1, num2);
+        case "/":
+          return division(num1, num2);
+      }
+    }
+
+    const num1 = +prompt('Введите первое число?');
+    const num2 = +prompt('Введите второе число?');
+
+    console.log(mathOperation(num1, num2, "+"));
+    console.log(mathOperation(num1, num2, "-"));
+    console.log(mathOperation(num1, num2, "*"));
+    console.log(mathOperation(num1, num2, "/"));
+
+  </script>
+</body>
+
+</html>

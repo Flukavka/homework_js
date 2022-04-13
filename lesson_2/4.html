@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+
+<body>
+  <!--
+Обязательное задание.
+
+Необходимо реализовать четыре функции, каждая функция должна принимать по два
+числа и выполнять одну из операций (каждая функция выполняет одну из них):
+1. Сложение
+2. Разность
+3. Умножение
+4. Деление
+
+Необходимо сделать так, чтобы функция вернула число, например выражение
+`console.log(sum(2, 6));` должно вывести число 8 в консоль (sum - функция
+сложения в данном примере, ваши названия функций могут отличаться).
+
+Округлять значения, которые возвращают функции не нужно, однако, обратите
+внимание на разность, функция должна вычесть из большего числа меньшее, либо
+вернуть 0, если числа равны.
+
+Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать
+не нужно.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+
+
+  <script>
+    "use strict";
+
+
+    /**
+     * функция суммирует значения
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает сумму значений
+     */
+    function sum(num1, num2) {
+      return num1 + num2;
+    }
+
+    /**
+     * функция определяет разность значений
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает разность значений
+     */
+    function diff(num1, num2) {
+      return num1 - num2;
+    }
+
+    /**
+     * функция определяет произведение значений
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает произведение значений
+     */
+    function multiplication(num1, num2) {
+      return num1 * num2;
+    }
+
+    /**
+     * функция определяет частное
+     * @param {number} num1 числовое значение №1
+     * @param {number} num2 числовое значение №2
+     * @returns возвращает частное
+     */
+    function division(num1, num2) {
+      return num1 / num2;
+    }
+
+
+    const num1 = +prompt('Введите первое число?');
+    const num2 = +prompt('Введите второе число?');
+
+    let resultSum = sum(num1, num2);
+    console.log(resultSum);
+
+    let resultDiff = diff(num1, num2);
+    console.log(resultDiff);
+
+    let resultMultiplication = multiplication(num1, num2);
+    console.log(resultMultiplication);
+
+    let resultDivision = division(num1, num2);
+    console.log(resultDivision);
+
+  </script>
+</body>
+
+</html>
