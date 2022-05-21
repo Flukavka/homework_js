@@ -1,0 +1,385 @@
+@import "_variables";
+
+body,
+html {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.b-heading {
+    background-color: #F8F3F4;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767.9px) {
+        justify-content: center;
+    }
+
+    &__h2 {
+        color: $coralLight;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+
+        @media (min-width: 768px) {
+            margin-left: 16px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-left: auto;
+        }
+    }
+}
+
+.b-cartBox {
+
+    @media (min-width: 1600px) {
+        display: flex;
+    }
+
+    &_l {
+        display: flex;
+        margin: 39px 8px 16px;
+        flex-direction: column;
+
+        @media (min-width: 414px) {
+            margin-left: 27px;
+            margin-right: 27px;
+        }
+
+        @media (min-width: 1600px) {
+            margin: 96px auto 128px;
+        }
+
+        &__cart {
+            align-self: center;
+
+            @media (min-width: 1600px) {
+                align-self: baseline;
+            }
+
+            &_carts {
+                display: flex;
+                flex-direction: row;
+                filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+                background: white;
+                position: relative;
+                margin-bottom: 32px;
+                width: 304px;
+
+                @media (min-width: 374px) {
+                    min-width: 358px;
+                }
+
+                @media (min-width: 500px) {
+                    min-width: 468px;
+                    height: 306px;
+                }
+
+                @media (min-width: 768px) {
+                    min-width: 734px;
+                    height: 306px;
+                    margin-bottom: 40px;
+                }
+
+                @media (min-width: 1600px) {
+                    min-width: 652px;
+                    height: 306px;
+                }
+
+                &_closure {
+                    position: absolute;
+                    top: 17px;
+                    right: 12px;
+
+                    @media (min-width: 500px) {
+                        top: 28px;
+                        right: 24px;
+                    }
+                }
+
+                &_cartImg {
+                    width: 144px;
+                    height: 188px;
+                    object-fit: cover;
+
+                    @media (min-width: 500px) {
+                        width: 262px;
+                        height: auto;
+                    }
+                }
+
+                &_cartDescription {
+
+                    @media (max-width: 374px) {
+                        padding: 14px 20px 37px 17px;
+                    }
+
+                    @media (min-width: 374.1px) {
+                        padding: 14px 53px 37px 17px;
+                    }
+
+                    @media (min-width: 500px) {
+                        padding: 22px 86px 62px 31px;
+                    }
+
+                    &_property {
+                        max-width: 144px;
+                        max-height: 134px;
+
+                        @media (min-width: 768px) {
+                            max-width: none;
+                        }
+
+                        &_propertyHeading {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #222222;
+                            margin-bottom: 26px;
+
+                            @media (min-width: 768px) {
+                                font-size: 24px;
+                                line-height: 29px;
+                            }
+                        }
+
+                        &_propertyPrice,
+                        &_propertyColor,
+                        &_propertySize,
+                        &_propertyQuantity {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #575757;
+
+                            @media (min-width: 768px) {
+                                font-size: 22px;
+                                line-height: 26px;
+                            }
+                        }
+
+                        &_propertyQuantity {
+                            display: flex;
+                            flex-direction: row;
+
+                            &_input {
+                                width: 24px;
+                                height: 15px;
+                                text-align: center;
+                                margin-left: 15px;
+                                border: 1px solid #EAEAEA;
+                                color: #656565;
+                            }
+                        }
+
+                        &_propertyPrice,
+                        &_propertyColor,
+                        &_propertySize {
+                            margin-bottom: 4px;
+                        }
+
+                        &_propertyPrice_value {
+                            color: $coralBright;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__button {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 48px;
+
+            @media (max-width: 370px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media (min-width: 370.1px) {
+                margin: 0;
+                width: 358px;
+                align-self: center;
+            }
+
+            @media (min-width: 768px) {
+                margin: 0;
+                width: 734px;
+                align-self: center;
+            }
+
+            @media (min-width: 1600px) {
+                margin: 0;
+                width: 652px;
+            }
+
+            &_buttonClear,
+            &_buttonContinue {
+                width: 175px;
+                height: 33px;
+                background: white;
+                border: 1px solid #a4a4a4;
+                font-family: inherit;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                color: #575757;
+                cursor: pointer;
+
+                @media (max-width: 370px) {
+                    margin-top: 8px;
+                }
+
+                @media (min-width: 768px) {
+                    width: 235px;
+                    height: 50px;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    &_r {
+        margin: 0 8px 96px 9px;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+
+        @media (min-width: 1600px) {
+            margin: 113px 230px auto 128px;
+            flex-direction: column;
+        }
+
+        &__cartBoxForm {
+            margin-top: 20px;
+
+            @media (min-width: 1600px) {
+                margin-top: 0;
+            }
+
+            &_heading {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            input {
+                display: block;
+                height: 45px;
+                width: 360px;
+                padding: 13px 17px;
+                box-sizing: border-box;
+                font-family: inherit;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #222222;
+                border: 1px solid #a4a4a4;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
+                &:not(:first-child) {
+                    margin-top: 20px;
+                }
+            }
+
+            button {
+                margin-top: 23px;
+                border: 1px solid #a4a4a4;
+                font-family: inherit;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                color: #575757;
+                padding: 11px 21px;
+                background-color: #FFFFFF;
+            }
+        }
+
+        &__order {
+            width: 360px;
+            height: 214px;
+            background-color: #F5F3F3;
+            margin-top: 59px;
+            margin-left: 15px;
+            text-align: center;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-top: 48px;
+                margin-left: auto;
+            }
+
+            @media (min-width: 1600px) {
+                margin-left: auto;
+            }
+
+            &_description {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                padding: 39px 34px 21px 90px;
+
+                &_sub {
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #4A4A4A;
+
+                    &Value {
+                        margin-left: 25px;
+                    }
+                }
+
+                &_grand {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+
+                    &Value {
+                        margin-left: 25px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $coralLight;
+                    }
+                }
+            }
+
+            hr {
+                width: 275px;
+                height: 1px;
+                background: #E2E2E2;
+                border: none;
+                margin: auto;
+            }
+
+            button {
+                background: $coralLight;
+                color: white;
+                border: none;
+                padding: 15px 43px 16px 41px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                font-family: inherit;
+                margin-top: 17px;
+            }
+        }
+    }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header_bcg">
+        <div class="header_nav container">
+            <div class="left header_nav container">
+                <a href="index.html" class="index">
+                    <img class="logo_image" src="img/logo.svg" alt="logo">
+                </a>
+                <img class="searh_image" src="img/searh.svg" alt="searh">
+            </div>
+            <div class="right header_nav container">
+                <img class="menu_image" src="img/barmenu.svg" alt="menu">
+                <a href="registration.html"><img class="user_image" src="img/user.svg" alt="user"></a>
+                <div class="basket">
+                    <!-- <a href="cart.html"> -->
+                    <img class="basket_image" src="img/basket.svg" alt="basket">
+                    <span class="basket_number">0</span>
+                    <!-- </a> -->
+                </div>
+                <div class="b-purchases">
+                    <!-- hidden_purchases -->
+                    <div class="b-purchases_data">
+                        <div class="b-purchases_data__h">
+                            <div class="b-purchases_data__h_hName">Название<br>товара</div>
+                            <div class="b-purchases_data__h_hCount">Количество</div>
+                            <div class="b-purchases_data__h_hPrice">Цена за шт.</div>
+                            <div class="b-purchases_data__h_hSumm">Итого</div>
+                        </div>
+                        <div class="b-purchases_data__user"></div>
+                    </div>
+                    <div class="b-purchases_data__totalPrice">
+                        <span class="b-purchases_data__totalPrice_name">Товаров в корзине на сумму:</span>
+                        <span class="b-purchases_data__totalPrice_summ">$ 0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="new_arrivals">
+        <div class="container new_arrivals">
+            <div class="new_arrivals_left">NEW ARRIVALS</div>
+            <div class="new_arrivals_right">
+                <div class="nav_new_arrivals"><a href="index.html" class="link_main">HOME /</a></div>
+                <div class="nav_new_arrivals"><a href="#" class="link_men">MEN /</a></div>
+                <div class="nav_new_arrivals"><a href="#" class="link_new_arrivals">NEW ARRIVALS</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container filter">
+        <div class="burger"><span class="filter_t filter_tPink">FILTER</span><img
+                src="catalog/img_man/burger_filter.svg" alt="filter" class="burger_filter">
+            <div class="burgerPopup hidden">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Totam,
+                error ! </div>
+        </div>
+        <div class="characteristics">
+            <div class="c_trending_now">TRENDING NOW</div>
+            <div class="arrow arrow_first"><img src="catalog/img_man/arrow_filter.svg" alt="arrow" class="c_arrow">
+            </div>
+            <div class="c_size">SIZE</div>
+            <div class="arrow arrow_two"><img src="catalog/img_man/arrow_filter.svg" alt="arrow" class="c_arrow">
+            </div>
+            <div class="c_price">PRICE</div>
+            <div class="arrow arrow_last"><img src="catalog/img_man/arrow_filter.svg" alt="arrow" class="c_arrow">
+            </div>
+        </div>
+    </div>
+    <div class="catalog container">
+        <div class="c_catalog_card">
+            <div class="c_catalog_card_n" data-id="01">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_1.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button">
+                        <button class="c_card_button"><img src="img/basket_card.svg" alt="basket">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="ELLERY X M'O CAPSULE">ELLERY X M'O CAPSULE</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">1 000.07</div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_catalog_card_n" data-id="02">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_2.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button"><button class="c_card_button"><img src="img/basket_card.svg"
+                                alt="basket">Add to Cart</button></div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="ELLERY X M'O">ELLERY X M'O</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">50.03</div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_catalog_card_n" data-id="03">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_3.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button"><button class="c_card_button"><img src="img/basket_card.svg"
+                                alt="basket">Add to Cart</button></div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="ELLERY X">ELLERY X</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">50.04</div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_catalog_card_n" data-id="04">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_4.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button"><button class="c_card_button"><img src="img/basket_card.svg"
+                                alt="basket">Add to Cart</button></div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="ELLERY X FLUKAVKA">ELLERY X FLUKAVKA</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">1 050.06</div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_catalog_card_n" data-id="05">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_5.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button"><button class="c_card_button"><img src="img/basket_card.svg"
+                                alt="basket">Add to Cart</button></div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="FLUKAVKA DESIGN">FLUKAVKA DESIGN</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">56.69</div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_catalog_card_n" data-id="06">
+                <div class="c_catalog_card_n_hover"><img class="c_image_card" src="catalog/img_man/man_6.jpg" alt="lot">
+                    <div class="c_catalog_card_n_button"><button class="c_card_button"><img src="img/basket_card.svg"
+                                alt="basket">Add to Cart</button></div>
+                </div>
+                <div class="c_catalog_card_data">
+                    <div class="c_catalog_card_h_p">
+                        <h3 class="c_catalog_card_h" data-name="ELLERY X M'O CAPSULE">ELLERY X M'O CAPSULE</h3>
+                        <p class="c_catalog_card_p">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    </div>
+                    <div class="c_catalog_price">
+                        <div class="c_valute">&#36;
+                        </div>
+                        <div class="c_price" data-price="">52.42</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog_pagination"><a href="#" class="arrow_pag"><img src="catalog/img_man/arrow_pag_left.svg"
+                    alt="left" class="arrow_pag_img"></a><a href="#" class="catalog__page_namber">1</a><a href="#"
+                class="catalog__page_namber">2</a><a href="#" class="catalog__page_namber">3</a><a href="#"
+                class="catalog__page_namber">4</a><a href="#" class="catalog__page_namber">5</a><a href="#"
+                class="catalog__page_namber">6.....20</a><a href="#" class="arrow_pag"><img
+                    src="catalog/img_man/arrow_pag_right.svg" alt="right" class="arrow_pag"></a></div>
+    </div>
+    <footer class="footer">
+        <div class="footer_top container">
+            <div class="footer_top_items footer_top_items_1"><img src="img/car.svg" alt="car">
+                <div class="footer_top_h_p">
+                    <h3 class="footer_top_h">Free Delivery</h3>
+                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph <br
+                            class="br_footer_top_p">next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="footer_top_items  footer_top_items_2"><img src="img/sale.svg" alt="sale">
+                <div class="footer_top_h_p">
+                    <h3 class="footer_top_h">Sales & discounts</h3>
+                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph <br
+                            class="br_footer_top_p">next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <div class="footer_top_items  footer_top_items_3"><img src="img/crown.svg" alt="quality">
+                <div class="footer_top_h_p">
+                    <h3 class="footer_top_h">Quality assurance</h3>
+                    <p class="footer_top_p">Worldwide delivery on all. Authorit tively morph <br
+                            class="br_footer_top_p">next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_subscribe">
+            <div class="footer_subscribe_info container">
+                <div class="subscribe_info"><img src="img/subscribe_info.png" alt="photo">
+                    <div class="subscribe_info_p">“Vestibulum quis porttitor dui ! Quisque viverra nunc mi,
+                        <i>a pulvinar purus condimentum“</i>
+                    </div>
+                </div>
+                <form class="subscribe_form" action="#">
+                    <div class="subscribe_form_h_p">
+                        <h2 class="subscribe_form_h">SUBSCRIBE</h2>
+                        <p class="subscribe_form_p">FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <div class="subscribe_form_useremail"><input class="subscribe_form_useremail_input" type="email"
+                            placeholder="Enter Your Email"><button
+                            class="subscribe_form_useremail_button">Subscribe</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="footer_bottom container">
+            <div class="footer_bottom_link">
+                <!-- <a href="https://www.facebook.com/" class="facebook" target="_blank"><img src="img/facebook.svg"
+                        alt="facebook" class="facebook_img"></a>
+                <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="img/instagram.svg"
+                        alt="instagram" class="instagram_img"></a> -->
+                <a href="https://www.pinterest.ru/" class="pinterest" target="_blank"><img src="img/pinterest.svg"
+                        alt="pinterest" class="pinterest_img"></a>
+                <!-- <a href="https://twitter.com/" class="twiter" target="_blank"><img src="img/twiter.svg" alt="twiter"
+                        class="twiter_img"></a> -->
+            </div>
+            <div class="protection">&copy;
+                2021 Brand All Rights Reserved.</div>
+        </div>
+    </footer>
+    <script src="catalog/app.js"></script>
+    <script src="catalog.js"></script>
+</body>
+
+</html>
