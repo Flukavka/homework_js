@@ -1,0 +1,296 @@
+@import "_variables";
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+.b-slider {
+
+    &__sliderImagebox {
+        background: #F7F7F7;
+        border: 1px solid #EAEAEA;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        min-height: 624px;
+        position: relative;
+
+        &_pic {
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (min-width: 480px) {
+                margin-top: 85px;
+            }
+
+            @media (min-width: 768px) {
+                margin-top: 30px;
+            }
+
+            @media (min-width: 1600px) {
+                margin-top: 11px;
+            }
+        }
+
+        &_arrowLeft,
+        &_arrowRight {
+            width: 47px;
+            height: 47px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        &_arrowLeft {
+            background-image: url(img_product/arrow_left.svg);
+
+            &:hover {
+                background-image: url(img_product/arrow_left_hover.svg);
+            }
+        }
+
+        &_arrowRight {
+            background-image: url(img_product/arrow_right.svg);
+            right: 0;
+
+            &:hover {
+                background-image: url(img_product/arrow_right_hover.svg);
+            }
+        }
+    }
+}
+
+.b-slider__sliderDescription {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+
+    @media (min-width: 1600px) {
+        position: relative;
+        margin-top: -40px;
+    }
+
+    &_chapter {
+
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $coralLight;
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 12px;
+    }
+
+    &_chapterHr1 {
+        background-color: $coralBright;
+        width: 63px;
+        height: 3px;
+    }
+
+    &_label {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 32px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 48px;
+        }
+    }
+
+    &_txt {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin: 0 24px 32px;
+
+        @media (min-width: 768px) {
+            max-width: 555px;
+        }
+    }
+
+    &_price {
+        display: flex;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: $coralBright;
+        margin-bottom: 32px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &_chapterHr2 {
+        background-color: #EAEAEA;
+        width: 175px;
+        height: 1px;
+    }
+
+    &_characteristics {
+        margin: 48px 16px 64px 20px;
+        display: flex;
+        align-items: baseline;
+
+        @media (min-width: 768px) {
+            margin: 64px 197px 48px;
+        }
+
+        &_chooseNav {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            color: #6F6E6E;
+        }
+
+        &_navArrow {
+            margin: 0 24px 0 10px;
+        }
+    }
+
+    &_buttonBox {
+
+        margin-bottom: 64px;
+
+        &_button {
+            border: 1px solid #FF6A6A;
+            color: #F26376;
+            font-size: 16px;
+            font-family: inherit;
+            line-height: 19px;
+            padding: 15px 56px 10px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #FFFFFF;
+
+            &_buttonImg {
+                margin-right: 22px;
+            }
+        }
+    }
+}
+
+.p_catalog_card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 580px);
+    margin: 64px 8px;
+    gap: 16px;
+
+    @media (min-width: 360px) {
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(2, 580px);
+        justify-content: center;
+    }
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 580px;
+        gap: 16px;
+        margin: 128px 14px;
+    }
+
+    @media (min-width: 800px) {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: 580px;
+        gap: 16px;
+        margin: 128px 14px;
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: 580px;
+        gap: 30px;
+        margin: 128px 0;
+    }
+
+    &_n {
+        padding-bottom: 19px;
+        background: #F8F8F8;
+
+        @media (max-width: 1200px) {
+            &_3 {
+                display: none;
+            }
+        }
+    }
+
+    &_block {
+        position: relative;
+    }
+
+    &_image {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        display: block;
+    }
+
+    &_h_p {
+        max-width: 314px;
+        margin: 25px 28px 18px 16px;
+    }
+
+    &_h {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    &_p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    }
+
+    &_price {
+        display: flex;
+        margin-left: 16px;
+
+        &_valute,
+        &_meaning {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: $coralLight;
+        }
+    }
+
+    &_button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(58, 56, 56, 0.86);
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &_txt {
+            background: none;
+            border: 1px solid #FFFFFF;
+            color: white;
+            font-size: 14px;
+            font-family: inherit;
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
